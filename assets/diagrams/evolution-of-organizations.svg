@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+
+  <!-- Background -->
+  <rect width="1000" height="340" fill="#fafaf8" rx="8"/>
+
+  <!-- Stage cards -->
+  <!-- Stage 1: Functional -->
+  <rect x="20" y="50" width="175" height="240" rx="6" fill="#ffffff" stroke="#e5e5e2" stroke-width="1.5"/>
+  <rect x="20" y="50" width="175" height="5" rx="3" fill="#94a3b8"/>
+  <text x="107" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#64748b" letter-spacing="0.08em">STAGE 1</text>
+  <text x="107" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Functional</text>
+  <text x="107" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Organizations</text>
+  <line x1="40" y1="134" x2="175" y2="134" stroke="#e5e5e2" stroke-width="1"/>
+  <circle cx="40" cy="155" r="3" fill="#94a3b8"/>
+  <text x="52" y="160" font-size="12" fill="#6b6b6b">Siloed departments</text>
+  <circle cx="40" cy="182" r="3" fill="#94a3b8"/>
+  <text x="52" y="187" font-size="12" fill="#6b6b6b">Top-down planning</text>
+  <circle cx="40" cy="209" r="3" fill="#94a3b8"/>
+  <text x="52" y="214" font-size="12" fill="#6b6b6b">Slow handoffs</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="202" y1="170" x2="222" y2="170" stroke="#d4d4d0" stroke-width="1.5"/>
+  <polygon points="222,165 232,170 222,175" fill="#d4d4d0"/>
+
+  <!-- Stage 2: Agile -->
+  <rect x="235" y="50" width="175" height="240" rx="6" fill="#ffffff" stroke="#e5e5e2" stroke-width="1.5"/>
+  <rect x="235" y="50" width="175" height="5" rx="3" fill="#7dd3fc"/>
+  <text x="322" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#0284c7" letter-spacing="0.08em">STAGE 2</text>
+  <text x="322" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Agile</text>
+  <text x="322" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Organizations</text>
+  <line x1="255" y1="134" x2="390" y2="134" stroke="#e5e5e2" stroke-width="1"/>
+  <circle cx="255" cy="155" r="3" fill="#7dd3fc"/>
+  <text x="267" y="160" font-size="12" fill="#6b6b6b">Cross-functional teams</text>
+  <circle cx="255" cy="182" r="3" fill="#7dd3fc"/>
+  <text x="267" y="187" font-size="12" fill="#6b6b6b">Iterative delivery</text>
+  <circle cx="255" cy="209" r="3" fill="#7dd3fc"/>
+  <text x="267" y="214" font-size="12" fill="#6b6b6b">Faster feedback loops</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="417" y1="170" x2="437" y2="170" stroke="#d4d4d0" stroke-width="1.5"/>
+  <polygon points="437,165 447,170 437,175" fill="#d4d4d0"/>
+
+  <!-- Stage 3: Platform -->
+  <rect x="450" y="50" width="175" height="240" rx="6" fill="#ffffff" stroke="#e5e5e2" stroke-width="1.5"/>
+  <rect x="450" y="50" width="175" height="5" rx="3" fill="#86efac"/>
+  <text x="537" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#16a34a" letter-spacing="0.08em">STAGE 3</text>
+  <text x="537" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Platform</text>
+  <text x="537" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Organizations</text>
+  <line x1="470" y1="134" x2="605" y2="134" stroke="#e5e5e2" stroke-width="1"/>
+  <circle cx="470" cy="155" r="3" fill="#86efac"/>
+  <text x="482" y="160" font-size="12" fill="#6b6b6b">Shared capabilities</text>
+  <circle cx="470" cy="182" r="3" fill="#86efac"/>
+  <text x="482" y="187" font-size="12" fill="#6b6b6b">Internal platforms</text>
+  <circle cx="470" cy="209" r="3" fill="#86efac"/>
+  <text x="482" y="214" font-size="12" fill="#6b6b6b">Scalable product ops</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="632" y1="170" x2="652" y2="170" stroke="#d4d4d0" stroke-width="1.5"/>
+  <polygon points="652,165 662,170 652,175" fill="#d4d4d0"/>
+
+  <!-- Stage 4: AI-Assisted -->
+  <rect x="665" y="50" width="150" height="240" rx="6" fill="#ffffff" stroke="#e5e5e2" stroke-width="1.5"/>
+  <rect x="665" y="50" width="150" height="5" rx="3" fill="#fbbf24"/>
+  <text x="740" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#d97706" letter-spacing="0.08em">STAGE 4</text>
+  <text x="740" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">AI-Assisted</text>
+  <text x="740" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Organizations</text>
+  <line x1="680" y1="134" x2="800" y2="134" stroke="#e5e5e2" stroke-width="1"/>
+  <circle cx="680" cy="155" r="3" fill="#fbbf24"/>
+  <text x="692" y="160" font-size="12" fill="#6b6b6b">AI copilots in workflows</text>
+  <circle cx="680" cy="182" r="3" fill="#fbbf24"/>
+  <text x="692" y="187" font-size="12" fill="#6b6b6b">Augmented decisions</text>
+  <circle cx="680" cy="209" r="3" fill="#fbbf24"/>
+  <text x="692" y="214" font-size="12" fill="#6b6b6b">Human + machine exec</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="822" y1="170" x2="840" y2="170" stroke="#d4d4d0" stroke-width="1.5"/>
+  <polygon points="840,165 850,170 840,175" fill="#d4d4d0"/>
+
+  <!-- Stage 5: AI-Native -->
+  <rect x="853" y="50" width="127" height="240" rx="6" fill="#ffffff" stroke="#2d5be3" stroke-width="2"/>
+  <rect x="853" y="50" width="127" height="5" rx="3" fill="#2d5be3"/>
+  <text x="916" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#2d5be3" letter-spacing="0.08em">STAGE 5</text>
+  <text x="916" y="104" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">AI-Native</text>
+  <text x="916" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Organizations</text>
+  <line x1="868" y1="134" x2="965" y2="134" stroke="#e5e5e2" stroke-width="1"/>
+  <circle cx="868" cy="155" r="3" fill="#2d5be3"/>
+  <text x="880" y="160" font-size="12" fill="#6b6b6b">Redesigned ops model</text>
+  <circle cx="868" cy="182" r="3" fill="#2d5be3"/>
+  <text x="880" y="187" font-size="12" fill="#6b6b6b">AI in core decisions</text>
+  <circle cx="868" cy="209" r="3" fill="#2d5be3"/>
+  <text x="880" y="214" font-size="12" fill="#6b6b6b">Mgmt adapted to AI</text>
+
+  <!-- Bottom label -->
+  <text x="500" y="318" text-anchor="middle" font-size="11" fill="#94a3b8" letter-spacing="0.05em">ORGANIZATIONAL EVOLUTION — © EVOLVING ORGS</text>
+
+</svg>
