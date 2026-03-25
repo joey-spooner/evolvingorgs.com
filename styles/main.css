@@ -10,16 +10,28 @@
 }
 
 :root {
+  /* Brand tokens */
+  --eo-ink: #0B0B0B;
+  --eo-white: #FFFFFF;
+  --eo-orange: #F97316;
+  --eo-lime: #B8CF1E;
+  --eo-green: #8DC62F;
+  --eo-leaf: #53B44F;
+  --eo-teal: #35B497;
+  --eo-blue: #1E9BCB;
+  --eo-border: rgba(11, 11, 11, 0.08);
+  --eo-panel: #F7F7F5;
+
   --color-bg: #fafaf8;
   --color-surface: #ffffff;
-  --color-text: #1a1a1a;
+  --color-text: #0B0B0B;
   --color-text-muted: #6b6b6b;
-  --color-accent: #2d5be3;
-  --color-accent-hover: #1e45c8;
-  --color-border: #e5e5e2;
-  --color-rule: #d4d4d0;
+  --color-accent: #F97316;
+  --color-accent-hover: #e06500;
+  --color-border: rgba(11, 11, 11, 0.08);
+  --color-rule: rgba(11, 11, 11, 0.12);
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter Tight', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-serif: 'Georgia', 'Times New Roman', serif;
 
   --size-xs: 0.75rem;
@@ -108,7 +120,7 @@ li { margin-bottom: var(--space-2); }
 }
 
 .section--alt {
-  background-color: var(--color-surface);
+  background-color: var(--eo-panel);
 }
 
 .section--dark {
@@ -143,13 +155,13 @@ hr.rule {
 }
 
 .site-nav__brand {
-  font-weight: 700;
-  font-size: var(--size-base);
-  color: var(--color-text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.01em;
+  flex-shrink: 0;
 }
-.site-nav__brand:hover { text-decoration: none; }
+.site-nav__brand:hover { text-decoration: none; opacity: 0.85; }
+.site-nav__brand img { display: block; height: 36px; width: auto; }
 
 .site-nav__links {
   display: flex;
@@ -197,11 +209,12 @@ hr.rule {
 }
 
 .site-footer__brand {
-  font-weight: 700;
-  font-size: var(--size-sm);
-  color: var(--color-text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
+.site-footer__brand:hover { opacity: 0.75; }
+.site-footer__brand img { display: block; height: 28px; width: auto; }
 
 .site-footer__links {
   display: flex;
@@ -228,7 +241,7 @@ hr.rule {
 .btn {
   display: inline-block;
   padding: 0.65rem 1.35rem;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: var(--size-sm);
   font-weight: 600;
   cursor: pointer;
@@ -345,8 +358,8 @@ hr.rule {
 
 .card {
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border: 1px solid var(--eo-border);
+  border-radius: 16px;
   padding: var(--space-6);
   display: flex;
   flex-direction: column;
@@ -452,7 +465,7 @@ hr.rule {
   min-width: 180px;
   padding: 0.65rem 0.875rem;
   border: 1.5px solid rgba(240,239,235,0.25);
-  border-radius: 4px;
+  border-radius: 8px;
   background: rgba(255,255,255,0.06);
   color: #f0efeb;
   font-size: var(--size-sm);
@@ -465,7 +478,7 @@ hr.rule {
 
 .signup-form button {
   padding: 0.65rem 1.35rem;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: var(--color-accent);
   color: #fff;
   border: none;
@@ -485,8 +498,8 @@ hr.rule {
 
 /* --- Briefing block --- */
 .briefing-block {
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border: 1px solid var(--eo-border);
+  border-radius: 16px;
   padding: var(--space-8);
   margin-top: var(--space-8);
   background: var(--color-surface);
@@ -678,8 +691,8 @@ hr.rule {
 .form-group textarea {
   width: 100%;
   padding: 0.65rem 0.875rem;
-  border: 1.5px solid var(--color-border);
-  border-radius: 4px;
+  border: 1.5px solid rgba(11,11,11,0.15);
+  border-radius: 8px;
   font-size: var(--size-base);
   font-family: var(--font-sans);
   background: var(--color-surface);
