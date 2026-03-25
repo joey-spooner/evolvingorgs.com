@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-03-25 (2)
+- Added Webinars and Media & Interviews to Work With Me page
+- Updated homepage services grid and content section to include both
+- Updated Thinking page header to reflect interviews and webinars as content formats
+- Added webinar guest and media/interview options to contact form
+
 ## 2026-03-25
 - Applied brand guide: switched font to Inter Tight, accent color to Signal Orange (#F97316), updated color tokens to match brand palette
 - Replaced text-based nav/footer brand with evolvingorgs-logo-light.svg across all pages
