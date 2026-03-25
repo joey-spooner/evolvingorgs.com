@@ -161,7 +161,7 @@ hr.rule {
   flex-shrink: 0;
 }
 .site-nav__brand:hover { text-decoration: none; opacity: 0.85; }
-.site-nav__brand img { display: block; height: 20px; width: auto; }
+.site-nav__brand img { display: block; height: 24px; width: auto; }
 
 .site-nav__links {
   display: flex;
@@ -214,7 +214,7 @@ hr.rule {
   text-decoration: none;
 }
 .site-footer__brand:hover { opacity: 0.75; }
-.site-footer__brand img { display: block; height: 16px; width: auto; }
+.site-footer__brand img { display: block; height: 20px; width: auto; }
 
 .site-footer__links {
   display: flex;

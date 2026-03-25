@@ -1,5 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 24" fill="none">
-  <text y="19" style="font-family:'Inter Tight',Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:20px;letter-spacing:-0.04em;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 28" fill="none">
+  <!-- Icon: nested SVG crops to the actual content bounds (88 88 235 233) of the source logo -->
+  <svg x="0" y="0" width="28" height="28" viewBox="88 88 235 233" overflow="hidden">
+    <line x1="112" y1="190" x2="128" y2="132" stroke="#B8CF1E" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="112" y1="190" x2="140" y2="232" stroke="#B8CF1E" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="112" y1="190" x2="110" y2="244" stroke="#B8CF1E" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="112" y1="190" x2="228" y2="208" stroke="#B8CF1E" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="112" y1="190" x2="194" y2="222" stroke="#B8CF1E" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="128" y1="132" x2="168" y2="104" stroke="#B1CB1D" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="128" y1="132" x2="212" y2="98"  stroke="#B1CB1D" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="128" y1="132" x2="140" y2="232" stroke="#B1CB1D" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="168" y1="104" x2="212" y2="98"  stroke="#8DC62F" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="168" y1="104" x2="248" y2="108" stroke="#8DC62F" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="168" y1="104" x2="278" y2="120" stroke="#8DC62F" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="212" y1="98"  x2="248" y2="108" stroke="#53B44F" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="212" y1="98"  x2="278" y2="120" stroke="#53B44F" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="248" y1="108" x2="278" y2="120" stroke="#35B497" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="248" y1="108" x2="294" y2="156" stroke="#35B497" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="278" y1="120" x2="294" y2="156" stroke="#1E9BCB" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="278" y1="120" x2="264" y2="190" stroke="#1E9BCB" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="294" y1="156" x2="264" y2="190" stroke="#2196C6" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="264" y1="190" x2="228" y2="208" stroke="#2196C6" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="228" y1="208" x2="194" y2="222" stroke="#22A7B5" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="228" y1="208" x2="204" y2="290" stroke="#22A7B5" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="194" y1="222" x2="140" y2="232" stroke="#3AB38B" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="194" y1="222" x2="204" y2="290" stroke="#3AB38B" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="140" y1="232" x2="110" y2="244" stroke="#78BE43" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="140" y1="232" x2="152" y2="276" stroke="#78BE43" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="110" y1="244" x2="126" y2="288" stroke="#8FC13B" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="110" y1="244" x2="152" y2="276" stroke="#8FC13B" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="126" y1="288" x2="152" y2="276" stroke="#61BA54" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="126" y1="288" x2="160" y2="310" stroke="#61BA54" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="152" y1="276" x2="176" y2="268" stroke="#4FB875" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="152" y1="276" x2="160" y2="310" stroke="#4FB875" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="176" y1="268" x2="196" y2="308" stroke="#36B391" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="176" y1="268" x2="204" y2="290" stroke="#36B391" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="196" y1="308" x2="204" y2="290" stroke="#1E9BCB" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="196" y1="308" x2="160" y2="310" stroke="#1E9BCB" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="204" y1="290" x2="262" y2="302" stroke="#2196C6" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="204" y1="290" x2="262" y2="268" stroke="#2196C6" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="204" y1="290" x2="296" y2="292" stroke="#2196C6" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="262" y1="302" x2="296" y2="292" stroke="#F28B11" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="262" y1="302" x2="262" y2="268" stroke="#F28B11" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="296" y1="292" x2="308" y2="256" stroke="#F28B11" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="308" y1="256" x2="286" y2="262" stroke="#F58C10" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="308" y1="256" x2="262" y2="268" stroke="#F58C10" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <line x1="286" y1="262" x2="262" y2="268" stroke="#F28B11" stroke-width="2.3" stroke-linecap="round" opacity="0.97"/>
+    <circle cx="112" cy="190" r="24" fill="#B8CF1E" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="128" cy="132" r="16" fill="#B1CB1D" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="168" cy="104" r="16" fill="#8DC62F" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="212" cy="98"  r="10" fill="#53B44F" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="248" cy="108" r="8"  fill="#35B497" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="278" cy="120" r="16" fill="#1E9BCB" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="294" cy="156" r="12" fill="#2196C6" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="264" cy="190" r="16" fill="#2196C6" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="228" cy="208" r="8"  fill="#22A7B5" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="194" cy="222" r="12" fill="#3AB38B" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="140" cy="232" r="18" fill="#78BE43" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="110" cy="244" r="10" fill="#8FC13B" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="126" cy="288" r="12" fill="#61BA54" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="152" cy="276" r="9"  fill="#4FB875" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="176" cy="268" r="9"  fill="#36B391" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="196" cy="308" r="10" fill="#1E9BCB" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="160" cy="310" r="11" fill="#2DACC0" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="204" cy="290" r="18" fill="#2196C6" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="262" cy="302" r="11" fill="#F28B11" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="296" cy="292" r="12" fill="#F28B11" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="308" cy="256" r="15" fill="#F58C10" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="286" cy="262" r="8"  fill="#F28B11" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="262" cy="268" r="10" fill="#F28B11" stroke="#0B0B0B" stroke-opacity="0.08" stroke-width="1"/>
+  </svg>
+  <!-- Wordmark text -->
+  <text x="34" y="21" style="font-family:'Inter Tight',Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:20px;letter-spacing:-0.04em;">
     <tspan font-weight="500" fill="#0B0B0B">Evolving </tspan><tspan font-weight="700" fill="#F97316">Orgs</tspan>
   </text>
 </svg>
