@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EU AI Act: Is Your Company Affected? — Evolving Orgs</title>
+  <meta name="description" content="A quick diagnostic to help you understand whether the EU AI Act's high-risk obligations apply to your company." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/evolvingorgs-favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <style>
+    .q-card {
+      border: 1px solid var(--eo-border);
+      border-radius: 16px;
+      padding: var(--space-6);
+      margin-bottom: var(--space-4);
+      background: var(--color-surface);
+    }
+    .q-card__text {
+      font-size: var(--size-base);
+      font-weight: 500;
+      margin-bottom: var(--space-4);
+      line-height: 1.5;
+    }
+    .q-options {
+      display: flex;
+      gap: var(--space-3);
+    }
+    .q-btn {
+      flex: 1;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--eo-border);
+      background: transparent;
+      font-family: var(--font-sans);
+      font-size: var(--size-sm);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      color: var(--color-text);
+    }
+    .q-btn:hover { border-color: var(--color-text); }
+    .q-btn.selected-yes {
+      background: var(--eo-orange);
+      border-color: var(--eo-orange);
+      color: #fff;
+    }
+    .q-btn.selected-no {
+      background: var(--color-text);
+      border-color: var(--color-text);
+      color: #fff;
+    }
+    #result { display: none; }
+    .result-badge {
+      display: inline-block;
+      padding: 0.35rem 0.875rem;
+      border-radius: 99px;
+      font-size: var(--size-xs);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-4);
+    }
+    .badge-low    { background: #e8f5e9; color: #2e7d32; }
+    .badge-medium { background: #fff3e0; color: #e65100; }
+    .badge-high   { background: #fbe9e7; color: #bf360c; }
+  </style>
+</head>
+<body>
+
+  <!-- Spectrum bar -->
+  <div style="height:4px;background:linear-gradient(to right, #B8CF1E, #53B44F, #35B497, #1E9BCB, #F97316);"></div>
+
+  <!-- Brand -->
+  <div style="padding:var(--space-8) var(--space-6) 0;max-width:640px;margin:0 auto;">
+    <a href="/aiweek/"><img src="../assets/images/evolvingorgs-wordmark.svg" alt="Evolving Orgs" style="height:22px;width:auto;display:block;" /></a>
+  </div>
+
+  <!-- Header -->
+  <section style="padding:var(--space-16) var(--space-6) var(--space-12);max-width:640px;margin:0 auto;">
+    <p style="font-size:var(--size-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:var(--space-4);">Quick diagnostic</p>
+    <h1 style="font-size:clamp(1.75rem,5vw,2.5rem);font-weight:700;letter-spacing:-0.02em;line-height:1.1;margin-bottom:var(--space-6);">Is your company affected by the EU AI Act?</h1>
+    <p style="font-size:var(--size-lg);color:var(--color-text-muted);line-height:1.6;">The Act's high-risk obligations take effect in August 2026. Answer five questions to get a quick read on your exposure.</p>
+  </section>
+
+  <!-- Questions -->
+  <section style="padding:0 var(--space-6) var(--space-12);max-width:640px;margin:0 auto;">
+
+    <div class="q-card" id="q1">
+      <p class="q-card__text">1. Does your company operate in the EU, or offer products and services to EU-based customers or employees?</p>
+      <div class="q-options">
+        <button class="q-btn" onclick="answer(1,'yes')">Yes</button>
+        <button class="q-btn" onclick="answer(1,'no')">No</button>
+      </div>
+    </div>
+
+    <div class="q-card" id="q2">
+      <p class="q-card__text">2. Do you use AI to make decisions about employees — hiring, performance evaluation, task assignment, or work scheduling?</p>
+      <div class="q-options">
+        <button class="q-btn" onclick="answer(2,'yes')">Yes</button>
+        <button class="q-btn" onclick="answer(2,'no')">No</button>
+      </div>
+    </div>
+
+    <div class="q-card" id="q3">
+      <p class="q-card__text">3. Does AI in your products or services affect access to credit, insurance, healthcare, or other essential services?</p>
+      <div class="q-options">
+        <button class="q-btn" onclick="answer(3,'yes')">Yes</button>
+        <button class="q-btn" onclick="answer(3,'no')">No</button>
+      </div>
+    </div>
+
+    <div class="q-card" id="q4">
+      <p class="q-card__text">4. Does your company use AI in education, safety-critical systems, public services, or law enforcement contexts?</p>
+      <div class="q-options">
+        <button class="q-btn" onclick="answer(4,'yes')">Yes</button>
+        <button class="q-btn" onclick="answer(4,'no')">No</button>
+      </div>
+    </div>
+
+    <div class="q-card" id="q5">
+      <p class="q-card__text">5. Do you build products that integrate large AI models (such as GPT-4, Claude, Gemini, or similar) and sell or deploy them to customers?</p>
+      <div class="q-options">
+        <button class="q-btn" onclick="answer(5,'yes')">Yes</button>
+        <button class="q-btn" onclick="answer(5,'no')">No</button>
+      </div>
+    </div>
+
+    <div style="margin-top:var(--space-6);">
+      <button onclick="showResult()" class="btn btn--primary" style="width:100%;text-align:center;padding:0.85rem;">See my result</button>
+    </div>
+
+  </section>
+
+  <!-- Result -->
+  <section id="result" style="padding:0 var(--space-6) var(--space-20);max-width:640px;margin:0 auto;">
+    <div style="border:1px solid var(--eo-border);border-radius:16px;padding:var(--space-8);">
+      <span id="result-badge" class="result-badge"></span>
+      <h2 id="result-heading" style="font-size:var(--size-2xl);font-weight:700;letter-spacing:-0.02em;margin-bottom:var(--space-4);"></h2>
+      <p id="result-body" style="color:var(--color-text-muted);line-height:1.7;margin-bottom:var(--space-6);"></p>
+      <p style="font-size:var(--size-sm);color:var(--color-text-muted);margin-bottom:var(--space-6);">
+        This is a rough indicator, not legal advice. The Act's full scope depends on your specific systems and use cases.
+        <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener" style="color:var(--color-accent);">Read the official overview →</a>
+      </p>
+      <hr class="rule" />
+      <p style="font-weight:600;margin-bottom:var(--space-3);margin-top:var(--space-6);">Compliance readiness is an operating model question.</p>
+      <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);">Clear AI ownership, documented oversight, and defined accountability don't just satisfy regulators — they're what makes AI work reliably in the first place. If that structure isn't in place yet, August 2026 is a useful deadline to build toward.</p>
+      <a href="https://calendar.app.google/n8xxZsZ9KMoQ5CrW8" class="btn btn--primary" style="display:block;text-align:center;padding:0.85rem;">Book a 30-minute conversation</a>
+      <p style="margin-top:var(--space-4);font-size:var(--size-sm);color:var(--color-text-muted);text-align:center;">
+        Or email <a href="mailto:joey@evolvingorgs.com" style="color:var(--color-accent);">joey@evolvingorgs.com</a>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const answers = {};
+
+    const results = {
+      low: {
+        badge: 'Low exposure',
+        badgeClass: 'badge-low',
+        heading: 'Limited direct obligations — for now.',
+        body: 'Based on your answers, your company likely has minimal exposure to the EU AI Act\'s high-risk requirements. The general provisions still apply if you operate in the EU, and the regulatory landscape is evolving. It\'s worth keeping an eye on how your AI use cases develop.'
+      },
+      medium: {
+        badge: 'Medium exposure',
+        badgeClass: 'badge-medium',
+        heading: 'Some obligations likely apply.',
+        body: 'Your company appears to have some exposure to the EU AI Act\'s high-risk provisions. The specific obligations depend on your AI systems and how they\'re used, but you should expect requirements around transparency, human oversight, and documentation. Getting your operating model in order now makes compliance significantly easier.'
+      },
+      high: {
+        badge: 'High exposure',
+        badgeClass: 'badge-high',
+        heading: 'Significant obligations likely apply.',
+        body: 'Based on your answers, your company is likely subject to the EU AI Act\'s high-risk requirements coming into force in August 2026. These include requirements for human oversight, documentation, risk management processes, and clear accountability. The operating model work needed for compliance is the same work that makes AI function reliably — it\'s worth doing regardless.'
+      }
+    };
+
+    function answer(q, val) {
+      answers[q] = val;
+      const card = document.getElementById('q' + q);
+      const btns = card.querySelectorAll('.q-btn');
+      btns[0].className = 'q-btn' + (val === 'yes' ? ' selected-yes' : '');
+      btns[1].className = 'q-btn' + (val === 'no'  ? ' selected-no'  : '');
+    }
+
+    function showResult() {
+      // Need at least Q1 answered
+      if (!answers[1]) {
+        alert('Please answer at least the first question.');
+        return;
+      }
+
+      let level = 'low';
+
+      if (answers[1] === 'no') {
+        level = 'low';
+      } else {
+        const highRiskYes = [2,3,4,5].filter(q => answers[q] === 'yes').length;
+        if (highRiskYes >= 3) level = 'high';
+        else if (highRiskYes >= 1) level = 'medium';
+        else level = 'low';
+      }
+
+      const r = results[level];
+      document.getElementById('result-badge').textContent = r.badge;
+      document.getElementById('result-badge').className = 'result-badge ' + r.badgeClass;
+      document.getElementById('result-heading').textContent = r.heading;
+      document.getElementById('result-body').textContent = r.body;
+
+      const resultEl = document.getElementById('result');
+      resultEl.style.display = 'block';
+      resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+
+</body>
+</html>
