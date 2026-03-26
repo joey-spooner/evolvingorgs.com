@@ -1,5 +1,5 @@
-# Claude instructions (keep local only)
-CLAUDE.md
+# Markdown files (keep local only)
+*.md
 
 # Secrets and environment variables
 .env
