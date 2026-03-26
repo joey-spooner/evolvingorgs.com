@@ -11,16 +11,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles/main.css" />
+  <style>
+    @keyframes spectrum-shift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--eo-border);
+    }
+    .spectrum-bar {
+      height: 4px;
+      background: linear-gradient(to right, #B8CF1E, #53B44F, #35B497, #1E9BCB, #F97316, #B8CF1E);
+      background-size: 200% 100%;
+      animation: spectrum-shift 5s ease-in-out infinite;
+    }
+    .sticky-header__brand {
+      padding: 10px var(--space-6);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
-<body>
+<body style="padding-top:54px;">
 
-  <!-- Spectrum bar -->
-  <div style="height:4px;background:linear-gradient(to right, #B8CF1E, #53B44F, #35B497, #1E9BCB, #F97316);"></div>
-
-  <!-- Brand -->
-  <div style="padding:var(--space-8) var(--space-6) 0;max-width:640px;margin:0 auto;">
-    <a href="/"><img src="../assets/images/evolvingorgs-wordmark.svg" alt="Evolving Orgs" style="height:22px;width:auto;display:block;" /></a>
-  </div>
+  <!-- Sticky header: spectrum bar + logo -->
+  <header class="sticky-header">
+    <div class="spectrum-bar"></div>
+    <div class="sticky-header__brand">
+      <a href="/"><img src="../assets/images/evolvingorgs-wordmark.svg" alt="Evolving Orgs" style="height:22px;width:auto;display:block;" /></a>
+    </div>
+  </header>
 
   <!-- Hero -->
   <section style="padding:var(--space-20) var(--space-6) var(--space-16);max-width:640px;margin:0 auto;">
@@ -80,10 +107,7 @@
   <!-- CTA -->
   <section style="background:var(--eo-ink);padding:var(--space-20) var(--space-6);">
     <div style="max-width:640px;margin:0 auto;text-align:center;">
-
-      <!-- Headshot -->
       <img src="../assets/images/joey-spooner.jpeg" alt="Joey Spooner" style="width:72px;height:72px;border-radius:50%;object-fit:cover;margin-bottom:var(--space-6);border:2px solid rgba(255,255,255,0.12);" />
-
       <h2 style="font-size:var(--size-2xl);font-weight:700;letter-spacing:-0.02em;color:#fff;margin-bottom:var(--space-4);">Let's talk about what's slowing your team down</h2>
       <p style="color:rgba(240,239,235,0.7);margin-bottom:var(--space-8);font-size:var(--size-base);">30 minutes. No pitch. Just a direct conversation.</p>
       <a href="https://calendar.app.google/n8xxZsZ9KMoQ5CrW8" class="btn btn--primary" style="font-size:var(--size-base);padding:0.85rem 2rem;">Book a 30-minute conversation</a>
